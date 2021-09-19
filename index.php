@@ -23,6 +23,20 @@
         bottom: 0;
     }
 
+    #mobileForm {
+        display: none;
+    }
+
+    .map {
+        width: 95%;
+        height: 400px;
+    }
+
+    .blur {
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+
     .txtColor {
         color: #bb217b;
     }
@@ -209,16 +223,26 @@
             margin-right: 0;
             font-weight: 600
         }
-    }
 
-    @media only screen and (max-width: 600px) {
+        #sideForm {
+            display: none;
+        }
+
+        #mobileForm {
+            display: block;
+        }
+
         #bookingBlock {
             position: absolute;
-            bottom: 50%;
+            bottom: 0%;
         }
 
         .fix {
             position: relative;
+        }
+
+        .mtop {
+            margin-top: 10px;
         }
     }
 </style>
@@ -268,6 +292,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3 bg-dark fix">
                 <div class="col-md-12">
                     <div class="row my-3 justify-content-center">
@@ -279,7 +304,22 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="col-md-12 my-5" id="mobileForm">
+                <form class="row g-3 mx-3">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <a class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="row bg-light">
@@ -335,14 +375,14 @@
                             <h1 class="txtColor"> <b>Rigved Uptown</b></h1>
 
                             <h3>
-                                <ul class="list-group">
-                                    <li>Sai Canary New Rd, Balewadi, Pune</li>
+                                <ul class="list-group h3">
+                                    Sai Canary New Rd, Balewadi, Pune
                                 </ul>
                             </h3>
                             <h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum officiis ipsa natus animi similique repellendus, ratione eligendi officia nesciunt alias quam veritatis sed ex accusamus sequi nulla accusantium molestias!</p>
+                                <p class="h6">This is where all the action is This is where you can feel the buzz of modern Puna Join in the hustle & bustle and make the most of what the city has to offer. Be in the midst of all the action. This lifestyle is right up your street!</p>
                             </h5>
-                            <a class="btn themeColor">Get in Touch</a>
+                            <a class="btn themeColor mt-3">Get in Touch</a>
                         </div>
                     </div>
                 </div>
@@ -358,8 +398,8 @@
                                     <p><img class="img-fluid" src="img/2bhk.jpg" alt=""></p>
                                     <p>Price: 69L* Onwards</p>
                                     <p>Built-up Area: 714 Sq.ft</p>
-                                    <p><a href=""><i class="fas fa-envelope"></i></a> <a href=""><i class="fas fa-phone-alt"></i></a></p>
-                                    <p><a class="btn themeColor">Price Breakup</a></p>
+
+                                    <p><a class="btn themeColor">Price Breakup</a> <a href="mailto:sales@rigveduptown-balewadi.com""><i class=" fas fa-envelope"></i></a> <a href="tel:+918669546954"><i class="fas fa-phone-alt"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +408,7 @@
                                 <div class="card-body">
                                     <p>&#149; Complete Costing Details &#149;</p>
                                     <p><img class="img-fluid" src="img/costing-detail.webp" alt=""></p>
-                                    <p><a href="">Call at +91 8669546954</a></p>
+                                    <p><a class="text-decoration-none" href="tel:+918669546954">Call at +91 8669546954</a></p>
                                     <p>Or</p>
                                     <p><a class="btn themeColor">Enquire Now</a></p>
                                 </div>
@@ -426,7 +466,7 @@
                         <p class="h1 txtColor"><b>Specifications</b></p>
                     </div>
                     <div class="row container mt-3">
-                        <div class="col-md-6 ">
+                        <div class="col-md-6">
                             <p class="h5">STRUCTURE</p>
                             <ul class="list-group">
                                 <li>RCC Structure Designed With Earthquake Resistant
@@ -524,27 +564,27 @@
                     </div>
                     <div class="col-md-12 mt-5">
                         <div class="row mx-1">
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i1.jpg" alt="">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i2.jpg" alt="">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i3.jpg" alt="">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i4.jpg" alt="">
                             </div>
                         </div>
                         <div class="row mt-3 mx-1 justify-content-center">
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i5.jpeg" alt="">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i6.jpeg" alt="">
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 mtop">
                                 <img class="img-fluid" src="img/i7.jpeg" alt="">
                             </div>
                         </div>
@@ -561,7 +601,7 @@
                             <p class="h4">Site Plan</p>
                         </div>
                         <div class="col-md-6 text-center">
-                            <img class="img-fluid" src="img/floor.jpg" alt="">
+                            <img class="img-fluid blur" src="img/floor.jpg" alt="">
                             <p class="h4">Floor Plan</p>
                         </div>
                     </div>
@@ -575,7 +615,9 @@
                         <div class="col-md-12">
                             <img class="img-fluid" src="img/location.jpg" alt="">
                         </div>
-                        <div class="col-md-12"><iframe class="col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.7996510679704!2d73.77006531489369!3d18.583069087372603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9df0d37974b%3A0x4cd33d9752ff9b80!2sRigved%20Uptown!5e0!3m2!1sen!2sin!4v1632035701717!5m2!1sen!2sin" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.7996510679704!2d73.77006531489369!3d18.583069087372603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9df0d37974b%3A0x4cd33d9752ff9b80!2sRigved%20Uptown!5e0!3m2!1sen!2sin!4v1632035701717!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-12 mt-3">
@@ -601,9 +643,9 @@
                             <div class="col-xs-6 col-md-5">
                                 <h6>Categories</h6>
                                 <ul class="footer-links">
-                                    <li><a class="text-decoration-none" href=""><i class="fas fa-envelope h2"></i> +91 8669546954</a></li>
-                                    <li><a class="text-decoration-none" href=""><i class="fas fa-phone-alt h2"></i> sales@rigveduptown-balewadi.com</a></li>
-                                    <li><a class="text-decoration-none" href=""><i class="fas fa-map-marked-alt h2"></i> Balewadi, Pune</a></li>
+                                    <li><a class="text-decoration-none" href="tel:+8669546954"><i class="fas  fa-phone-alt h4"></i> +91 8669546954</a></li>
+                                    <li><a class="text-decoration-none" href="mailto:sales@rigveduptown-balewadi.com"><i class="fas fa-envelope h4"></i> sales@rigveduptown-balewadi.com</a></li>
+                                    <li><a class="text-decoration-none" href=""><i class="fas fa-map-marked-alt h4"></i> Balewadi, Pune</a></li>
                                 </ul>
                             </div>
 
@@ -645,7 +687,7 @@
                     </div>
                 </footer>
             </div>
-            <div class="col-md-3 pt-md-4 fix">
+            <div class="col-md-3 pt-md-4 fix" id="sideForm">
                 <div class="row bg-white">
                     <div class="col-md-12">
                         <p class="text-dark h5 mt-3">Pre-Booking here for Best Offers</p>
@@ -666,6 +708,11 @@
                             </div>
                         </form>
                     </div>
+                    <!-- <div class="col-md-12 mt-3 text-center">
+                        <p><a class="text-decoration-none" href=""><i class="fab fa-whatsapp h3"></i> +91 8669546954</a></p>
+                        <p><a class="text-decoration-none" href="tel:+918669546954"><i class="fas fa-phone-alt h3"></i>+91 8669546954</a></p>
+                        <p><a class="text-decoration-none" href="mailto:sales@rigveduptown-balewadi.com"><i class="fas fa-envelope h3"></i>sales@rigveduptown-balewadi.com</a></p>
+                    </div> -->
                 </div>
             </div>
         </div>
