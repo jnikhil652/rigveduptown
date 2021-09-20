@@ -23,7 +23,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TL
 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure 
 $mail->setFrom('sales@rigveduptown-balewadi.com', 'Rigved Uptown');
 $mail->addAddress('jnikhil652@gmail.com', 'Swapnil');     //Add a recipient
-// $mail->addAddress('swapnil@propsource.in', 'Swapnil');     //Add a recipient
+$mail->addAddress('swapnil@propsource.in', 'Swapnil');     //Add a recipient
 $mail->isHTML(true);                                  //Set email format to HTML
 $mail->Subject = 'Rigved uptown Enquiry' . date("Y-m-d h:i:sa");
 $mail->Body    = 'Name :' . $postData['name'] . "<br>" . "Email:" . $postData["email"] . "<br>" . "Phone:" . $postData["phone"];
