@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Rigved Uptown</title>
 </head>
 <style>
@@ -218,11 +220,34 @@
         background-color: #ea4c89
     }
 
+    #bookingWhatsapp {
+        position: absolute !important;
+        top: -13px;
+        right: 30%;
+        color: green;
+        font-size: 45px;
+    }
+
+    #bookingCall {
+        position: absolute !important;
+        top: -14px;
+        left: 30%;
+        font-size: 45px;
+    }
+
+    .tour {
+        width: 100%;
+    }
+
     @media (max-width:767px) {
         .social-icons li.title {
             display: block;
             margin-right: 0;
             font-weight: 600
+        }
+
+        .tour {
+            width: 100%;
         }
 
         #sideForm {
@@ -233,10 +258,28 @@
             display: block;
         }
 
+
+
         #bookingBlock {
-            position: absolute;
-            bottom: 0%;
-            width: 150px;
+            position: absolute !important;
+            bottom: -50px;
+            width: 180px;
+            right: 0;
+        }
+
+        #bookingCall {
+            position: absolute !important;
+            top: -15px;
+            right: 4%;
+            font-size: 30px;
+        }
+
+        #bookingWhatsapp {
+            position: absolute !important;
+            bottom: -15px;
+            left: 4%;
+            color: green;
+            font-size: 30px;
         }
 
         .fix {
@@ -264,29 +307,29 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="#"><b>Pricing</b></a>
+                                            <a class="nav-link active" href="#Pricing"><b>Pricing</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Amenities</b></a>
+                                            <a class="nav-link" href="#Amenities"><b>Amenities</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Specifications</b></a>
+                                            <a class="nav-link" href="#Specifications"><b>Specifications</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Floor Plans</b></a>
+                                            <a class="nav-link" href="#Floor"><b>Floor Plans</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Gallery</b></a>
+                                            <a class="nav-link" href="#Gallery"><b>Gallery</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Location</b></a>
+                                            <a class="nav-link" href="#Location"><b>Location</b></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Virtual Site Tour</b></a>
+                                            <a class="nav-link" href="#Virtual"><b>Virtual Site Tour</b></a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"><b>Brochure</b></a>
-                                        </li>
+                                        <!-- <li class="nav-item">
+                                            <a class="nav-link" href="#Brochure"><b>Brochure</b></a>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -310,23 +353,26 @@
             <div class="col-md-12 my-3" id="mobileForm">
                 <form class="row g-3 mx-3" id="mobSide">
                     <div class="col-md-12  mt-2">
-                        <input type="text" class="form-control" id="nameMob" placeholder="Full Name">
+                        <input type="text" class="form-control animate__animated animate__bounce" id="nameMob" placeholder="Full Name">
+                        <small id="nameMobTxt" class="form-text text-danger"></small>
                     </div>
                     <div class="col-md-12 mt-2">
-                        <input type="text" class="form-control" id="emailMob" placeholder="Email">
+                        <input type="text" class="form-control animate__animated animate__bounce" id="emailMob" placeholder="Email">
+                        <small id="emailMobTxt" class="form-text text-danger"></small>
                     </div>
                     <div class="col-md-12 mt-2">
-                        <input type="text" class="form-control" id="phoneMob" placeholder="Phone">
+                        <input type="text" class="form-control animate__animated animate__bounce" id="phoneMob" placeholder="Phone">
+                        <small id="phoneMobTxt" class="form-text text-danger "></small>
                     </div>
                     <div class="col-md-12 mt-3 text-center">
-                        <a href="javascript:void(0);" onclick="formSubmit(2);" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
+                        <a href="javascript:void(0);" onclick="formSubmit(2);" class="btn px-3 py-1 themeColor animate__animated animate__bounce animate__slower animate__infinite">Avail Pre-book Offer</a>
                     </div>
                 </form>
             </div>
         </div>
         <div class="row bg-light">
             <div class="col-md-9">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="zoom-in">
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -360,13 +406,15 @@
                         </button> -->
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="col-md-2 col-3 bg-white text-center" id="bookingBlock">
-                        <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" class="h2 mt-2"><i class="fab fa-whatsapp-square"></i></a>
-                        <img class="img-fluid" src="img/desktop-banner.jpg" alt="">
+                <div class="col-md-12" data-aos="zoom-in">
+                    <div class="col-md-3 col-4 text-center" id="bookingBlock">
+                        <a id="bookingWhatsapp" href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" class="h2"><i class="fab fa-whatsapp-square"></i></a>
+                        <a class="h4" id="bookingCall" href="tel:+8669546954"><i class="fas  fa-phone-alt"></i></a>
+                        <img class="img-fluid" id="bookingImg" src="img/desktop-banner.jpg" alt="">
+
                     </div>
                 </div>
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5" data-aos="zoom-in">
                     <div class="row justify-content-center">
                         <div class="col-md-4">
                             <img class="img-fluid" src="img/img1.jpg" alt="">
@@ -386,7 +434,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5" data-aos="zoom-in" id="Pricing">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Pricing</b></p>
                     </div>
@@ -416,7 +464,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-3">
+                <div class="col-md-12 mt-3" data-aos="zoom-in" id="Amenities">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Amenities</b></p>
                     </div>
@@ -461,12 +509,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-3">
+                <div class="col-md-12 mt-3" data-aos="zoom-in" id="Specifications">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Specifications</b></p>
                     </div>
                     <div class="row container mt-3">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="zoom-in">
                             <p class="h5">STRUCTURE</p>
                             <ul class="list-group">
                                 <li>RCC Structure Designed With Earthquake Resistant
@@ -513,7 +561,7 @@
                                 <li>Provision For Exhaust Fan Point</li>
                             </ul>
                         </div>
-                        <div class="col-md-6 ">
+                        <div class="col-md-6 " data-aos="zoom-in">
                             <p class="h5">FLOORING</p>
                             <ul class="list-group">
                                 <li>24" X 48” Vitrified Tiles Across The Apartment</li>
@@ -558,40 +606,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-3">
+                <div class="col-md-12 mt-3" data-aos="zoom-in" id="Gallery">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Gallery</b></p>
                     </div>
                     <div class="col-md-12 mt-5">
                         <div class="row mx-1">
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i1.jpg" alt="">
                             </div>
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i2.jpg" alt="">
                             </div>
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i3.jpg" alt="">
                             </div>
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i4.jpg" alt="">
                             </div>
                         </div>
                         <div class="row mt-3 mx-1 justify-content-center">
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i5.jpeg" alt="">
                             </div>
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i6.jpeg" alt="">
                             </div>
-                            <div class="col-md-3 mtop">
+                            <div class="col-md-3 mtop" data-aos="zoom-out">
                                 <img class="img-fluid" src="img/i7.jpeg" alt="">
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5" data-aos="zoom-in" id="Floor">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Site and floor plan</b></p>
                     </div>
@@ -607,26 +655,25 @@
                     </div>
 
                 </div>
-                <div class="col-md-12 mt-5">
+                <div class="col-md-12 mt-5" data-aos="zoom-in" id="Location">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Location</b></p>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-aos="zoom-in">
                             <img class="img-fluid" src="img/location.jpg" alt="">
                         </div>
-                        <div class="col-md-12 d-flex justify-content-center">
+                        <div class="col-md-12 d-flex justify-content-center" data-aos="zoom-in">
                             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.7996510679704!2d73.77006531489369!3d18.583069087372603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9df0d37974b%3A0x4cd33d9752ff9b80!2sRigved%20Uptown!5e0!3m2!1sen!2sin!4v1632035701717!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-3">
+                <div class="col-md-12 mt-3" data-aos="zoom-in" id="Virual">
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Virual Tour</b></p>
                     </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <!-- <iframe class="map" src="vid/tour.mp4" frameborder="0"></iframe> -->
-                        <video class="map" controls>
+                    <div class="col-md-12 d-flex justify-content-center my-3" data-aos="zoom-in">
+                        <video class="tour" controls>
                             <source src="vid/tour.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -634,7 +681,7 @@
                 <footer class="site-footer mr-n2">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-12 col-md-4 ">
+                            <div class="col-sm-12 col-md-4 " data-aos="zoom-in">
                                 <div class="col-md-6 d-flex jstify-content-center">
                                     <p class=""><img class="img-fluid" src="img/Rera.png" alt=""></p>
                                 </div>
@@ -643,7 +690,7 @@
                                 <!-- <p>Available on website: maharera.mahaonline.gov.in</p> -->
                             </div>
 
-                            <div class="col-xs-6 col-md-5">
+                            <div class="col-xs-6 col-md-5" data-aos="zoom-in">
                                 <h6>Categories</h6>
                                 <ul class="footer-links">
                                     <li><a class="text-decoration-none" href="tel:+8669546954"><i class="fas  fa-phone-alt h4"></i> +91 8669546954</a></li>
@@ -652,17 +699,17 @@
                                 </ul>
                             </div>
 
-                            <div class="col-xs-6 col-md-3">
+                            <div class="col-xs-6 col-md-3" data-aos="zoom-in">
                                 <h6>Quick Links</h6>
                                 <ul class="footer-links">
-                                    <li><a class="text-decoration-none" href="">Pricing</a></li>
-                                    <li><a class="text-decoration-none" href="">Amenities</a></li>
-                                    <li><a class="text-decoration-none" href="">Specifications</a></li>
-                                    <li><a class="text-decoration-none" href="">Floor Plans</a></li>
-                                    <li><a class="text-decoration-none" href="">Gallery</a></li>
-                                    <li><a class="text-decoration-none" href="">Location</a></li>
-                                    <li><a class="text-decoration-none" href="">Virtual Site Tour</a></li>
-                                    <li><a class="text-decoration-none" href="">Brochure</a></li>
+                                    <li><a class="text-decoration-none" href="#Pricing">Pricing</a></li>
+                                    <li><a class="text-decoration-none" href="#Amenities">Amenities</a></li>
+                                    <li><a class="text-decoration-none" href="#Specifications">Specifications</a></li>
+                                    <li><a class="text-decoration-none" href="#Floor">Floor Plans</a></li>
+                                    <li><a class="text-decoration-none" href="#Gallery">Gallery</a></li>
+                                    <li><a class="text-decoration-none" href="#Location">Location</a></li>
+                                    <li><a class="text-decoration-none" href="#Virtual">Virtual Site Tour</a></li>
+                                    <!-- <li><a class="text-decoration-none" href="">Brochure</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -699,17 +746,23 @@
                         <form class="row g-3" id="formSide">
                             <div class="col-md-12 mt-3">
                                 <input type="text" class="form-control" name="name" id="nameSide" placeholder="Full Name">
+                                <small id="nameSideTxt" class="form-text text-danger"></small>
                             </div>
                             <div class="col-md-12 mt-3">
                                 <input type="text" class="form-control" name="email" id="emailSide" placeholder="Email">
+                                <small id="emailSideTxt" class="form-text text-danger"></small>
                             </div>
                             <div class="col-md-12 mt-3">
                                 <input type="text" class="form-control" name="phone" id="phoneSide" placeholder="Phone">
+                                <small id="phoneSideTxt" class="form-text text-danger"></small>
                             </div>
                             <div class="col-md-12 mt-4">
                                 <a href="javascript:void(0);" onclick="formSubmit(1);" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
                             </div>
                         </form>
+                    </div>
+                    <div class="col-md-12 px-3">
+                        <img class="img-fluid" src="img/sideImg.png" alt="">
                     </div>
                     <!-- <div class="col-md-12 mt-3 text-center">
                         <p><a class="text-decoration-none" href=""><i class="fab fa-whatsapp h3"></i> +91 8669546954</a></p>
@@ -762,19 +815,61 @@
             };
             if (name === "") {
                 errors.push("Name is empty");
+                switch (elem) {
+                    case 1:
+                        $('#nameSideTxt').text('Please enter your Name');
+                        break;
+                    case 2:
+                        $('#nameMobTxt').text('Please enter your Name');
+                        break;
+
+                    default:
+                        $('#namePopupTxt').text('Please enter your Name');
+                        break;
+                }
+
+
             }
             if (email === "") {
+                switch (elem) {
+                    case 1:
+                        $('#emailSideTxt').text('Please enter your Email');
+                        break;
+                    case 2:
+                        $('#emailMobTxt').text('Please enter your Email');
+                        break;
+
+                    default:
+                        $('#emailPopupTxt').text('Please enter your Email');
+                        break;
+                }
                 errors.push("Email is empty");
+
+
             }
             if (phone === "") {
+                switch (elem) {
+                    case 1:
+                        $('#phoneSideTxt').text('Please enter your Phone no.');
+                        break;
+                    case 2:
+                        $('#phoneMobTxt').text('Please enter your Phone no.');
+                        break;
+
+                    default:
+                        $('#phonePopupTxt').text('Please enter your Phone no.');
+                        break;
+                }
                 errors.push("Phone is empty");
+
+
             }
             if (errors.length > 0) {
-                bootbox.alert({
-                    message: errors.join("<br>"),
-                    centerVertical: true,
-                    closeButton: false
-                });
+                // bootbox.alert({
+                //     message: errors.join("<br>"),
+                //     centerVertical: true,
+                //     closeButton: false
+                // });
                 return false;
             }
             $.ajax({
@@ -794,12 +889,15 @@
             var html = '<form class="row g-3" id="formSide">' +
                 '<div class="col-md-12 mt-3">' +
                 '<input type="text" class="form-control" name="name" id="namePopup" placeholder="Full Name">' +
+                '<small id="namePopupTxt" class="form-text text-danger"></small>' +
                 ' </div>' +
                 '<div class="col-md-12 mt-3">' +
                 '<input type="text" class="form-control" name="email" id="emailPopup" placeholder="Email">' +
+                '<small id="emailPopupTxt" class="form-text text-danger"></small>' +
                 '</div>' +
                 '<div class="col-md-12 mt-3">' +
                 '<input type="text" class="form-control" name="phone" id="phonePopup" placeholder="Phone">' +
+                '<small id="phonePopupTxt" class="form-text text-danger"></small>' +
                 '</div>' +
                 '<div class="col-md-12 mt-4">' +
                 '<a href="javascript:void(0);" onclick="formSubmit(3);" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>' +
@@ -810,6 +908,10 @@
 
             });
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
