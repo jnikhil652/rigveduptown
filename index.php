@@ -8,7 +8,9 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Rigved Uptown</title>
 </head>
@@ -234,6 +236,7 @@
         #bookingBlock {
             position: absolute;
             bottom: 0%;
+            width: 150px;
         }
 
         .fix {
@@ -296,27 +299,27 @@
                 <div class="col-md-12">
                     <div class="row my-3 justify-content-center">
                         <div class="col-md-8 mt-1 text-center">
-                            <a class="callback px-2 py-1 text-white text-decoration-none" href="javascript:void();"> Request Call Back </a>
+                            <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" target="_blank" class="callback px-2 py-1 text-white text-decoration-none" href="javascript:void(0);"> Request Call Back </a>
                         </div>
                         <div class="col-md-8 mt-3 text-center">
-                            <a class="visit px-2 py-1 text-white text-decoration-none" href="javascript:void();">Schedule Site Visit</a>
+                            <a class="visit px-2 py-1 text-white text-decoration-none" href="javascript:void(0);" onclick="popup();">Schedule Site Visit</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 my-5" id="mobileForm">
-                <form class="row g-3 mx-3">
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+            <div class="col-md-12 my-3" id="mobileForm">
+                <form class="row g-3 mx-3" id="mobSide">
+                    <div class="col-md-12  mt-2">
+                        <input type="text" class="form-control" id="nameMob" placeholder="Full Name">
                     </div>
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" id="email" placeholder="Email">
+                    <div class="col-md-12 mt-2">
+                        <input type="text" class="form-control" id="emailMob" placeholder="Email">
                     </div>
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                    <div class="col-md-12 mt-2">
+                        <input type="text" class="form-control" id="phoneMob" placeholder="Phone">
                     </div>
-                    <div class="col-md-12 text-center">
-                        <a class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
+                    <div class="col-md-12 mt-3 text-center">
+                        <a href="javascript:void(0);" onclick="formSubmit(2);" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
                     </div>
                 </form>
             </div>
@@ -347,22 +350,20 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="sr-only">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                            <span class="sr-only">Next</span>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="col-2 bg-white" id="bookingBlock">
+                    <div class="col-md-2 col-3 bg-white text-center" id="bookingBlock">
+                        <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" class="h2 mt-2"><i class="fab fa-whatsapp-square"></i></a>
                         <img class="img-fluid" src="img/desktop-banner.jpg" alt="">
-                        <!-- <p>BOOKING OPEN</p>
-                        <p>Rigved Uptown</p>
-                        <p>Sai Canary New Rd, Balewadi, Pune</p> -->
                     </div>
                 </div>
                 <div class="col-md-12 mt-5">
@@ -381,7 +382,7 @@
                             <h5>
                                 <p class="h6">This is where all the action is This is where you can feel the buzz of modern Puna Join in the hustle & bustle and make the most of what the city has to offer. Be in the midst of all the action. This lifestyle is right up your street!</p>
                             </h5>
-                            <a class="btn themeColor mt-3">Get in Touch</a>
+                            <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" class="btn themeColor mt-3">Get in Touch</a>
                         </div>
                     </div>
                 </div>
@@ -398,7 +399,7 @@
                                     <p>Price: 69L* Onwards</p>
                                     <p>Built-up Area: 714 Sq.ft</p>
 
-                                    <p><a class="btn themeColor">Price Breakup</a> <a href="mailto:sales@rigveduptown-balewadi.com""><i class=" fas fa-envelope"></i></a> <a href="tel:+918669546954"><i class="fas fa-phone-alt"></i></a></p>
+                                    <p><a href="javascript:void(0);" onclick="popup();" class="btn themeColor">Price Breakup</a> <a href="mailto:sales@rigveduptown-balewadi.com""><i class=" fas fa-envelope"></i></a> <a href="tel:+918669546954"><i class="fas fa-phone-alt"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +410,7 @@
                                     <p><img class="img-fluid" src="img/costing-detail.webp" alt=""></p>
                                     <p><a class="text-decoration-none" href="tel:+918669546954">Call at +91 8669546954</a></p>
                                     <p>Or</p>
-                                    <p><a class="btn themeColor">Enquire Now</a></p>
+                                    <p><a href="javascript:void(0);" class="btn themeColor" onclick="popup();">Enquire Now</a></p>
                                 </div>
                             </div>
                         </div>
@@ -448,14 +449,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                     </div>
@@ -623,8 +624,11 @@
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Virual Tour</b></p>
                     </div>
-                    <div class="col-md-12">
-
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <!-- <iframe class="map" src="vid/tour.mp4" frameborder="0"></iframe> -->
+                        <video class="map" controls>
+                            <source src="vid/tour.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
                 <footer class="site-footer mr-n2">
@@ -692,18 +696,18 @@
                         <p class="text-dark h5 mt-3">Pre-Booking here for Best Offers</p>
                     </div>
                     <div class="col-md-12 mt-3">
-                        <form class="row g-3">
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" id="name" placeholder="Full Name">
+                        <form class="row g-3" id="formSide">
+                            <div class="col-md-12 mt-3">
+                                <input type="text" class="form-control" name="name" id="nameSide" placeholder="Full Name">
                             </div>
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" id="email" placeholder="Email">
+                            <div class="col-md-12 mt-3">
+                                <input type="text" class="form-control" name="email" id="emailSide" placeholder="Email">
                             </div>
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" id="phone" placeholder="Phone">
+                            <div class="col-md-12 mt-3">
+                                <input type="text" class="form-control" name="phone" id="phoneSide" placeholder="Phone">
                             </div>
-                            <div class="col-md-12">
-                                <a class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
+                            <div class="col-md-12 mt-4">
+                                <a href="javascript:void(0);" onclick="formSubmit(1);" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
                             </div>
                         </form>
                     </div>
@@ -717,9 +721,10 @@
         </div>
     </div>
     <!-- Jquery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
     <script>
         $(document).ready(function() {
             var myCarousel = document.querySelector('#carouselExampleDark');
@@ -732,6 +737,79 @@
             });
 
         });
+
+        function formSubmit(elem) {
+            var name, email, phone;
+            var data = {};
+            var errors = new Array();
+            if (elem == 1) {
+                name = $('#nameSide').val();
+                email = $('#emailSide').val();
+                phone = $('#phoneSide').val();
+            } else if (elem === 2) {
+                name = $('#nameMob').val();
+                email = $('#emailMob').val();
+                phone = $('#phoneMob').val();
+            } else {
+                name = $('#namePopup').val();
+                email = $('#emailPopup').val();
+                phone = $('#phonePopup').val();
+            }
+            data = {
+                "name": name,
+                "email": email,
+                "phone": phone
+            };
+            if (name === "") {
+                errors.push("Name is empty");
+            }
+            if (email === "") {
+                errors.push("Email is empty");
+            }
+            if (phone === "") {
+                errors.push("Phone is empty");
+            }
+            if (errors.length > 0) {
+                bootbox.alert({
+                    message: errors.join("<br>"),
+                    centerVertical: true,
+                    closeButton: false
+                });
+                return false;
+            }
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: data,
+                success: function(response) {
+                    bootbox.alert({
+                        message: "Thank you! Your request has been successfully submitted. We will get back to you shortly.",
+                        closeButton: false
+                    });
+                },
+            });
+        }
+
+        function popup() {
+            var html = '<form class="row g-3" id="formSide">' +
+                '<div class="col-md-12 mt-3">' +
+                '<input type="text" class="form-control" name="name" id="namePopup" placeholder="Full Name">' +
+                ' </div>' +
+                '<div class="col-md-12 mt-3">' +
+                '<input type="text" class="form-control" name="email" id="emailPopup" placeholder="Email">' +
+                '</div>' +
+                '<div class="col-md-12 mt-3">' +
+                '<input type="text" class="form-control" name="phone" id="phonePopup" placeholder="Phone">' +
+                '</div>' +
+                '<div class="col-md-12 mt-4">' +
+                '<a href="javascript:void(0);" onclick="formSubmit(3);" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>' +
+                '</div>' +
+                '</form>';
+            bootbox.dialog({
+                message: html,
+
+            });
+        }
     </script>
 </body>
 
