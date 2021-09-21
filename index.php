@@ -513,17 +513,21 @@
                     <div class="col-md-12 text-center">
                         <p class="h1 txtColor"><b>Specifications</b></p>
                     </div>
-                    <div class="row container mt-3">
+                    <div class="row mt-3 px-5 py-3 card">
                         <div class="col-md-6" data-aos="zoom-in">
+
                             <p class="h5">STRUCTURE</p>
                             <ul class="list-group">
                                 <li>RCC Structure Designed With Earthquake Resistant
                                     Frame.</li>
                             </ul>
+
+
                             <p class="h5">MASONRY</p>
                             <ul class="list-group">
                                 <li>Fly Ash Bricks / AAC Blocks Masonry Work</li>
                             </ul>
+
                             <p class="h5">KITCHEN</p>
                             <ul class="list-group">
                                 <li>Steel Grey Granite Kitchen Platform With SS Sink</li>
