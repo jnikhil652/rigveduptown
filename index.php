@@ -513,11 +513,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 mt-3" data-aos="zoom-in" id="Specifications">
-                    <div class="col-md-12 text-center">
+                <div class="col-md-12 mt-3 card shadow-lg" style="border:2px solid #bb217b" data-aos="zoom-in" id="Specifications">
+                    <div class="col-md-12 mt-2">
                         <p class="h1 txtColor"><b>Specifications</b></p>
                     </div>
-                    <div class="row mt-3 px-5 py-3 card shadow-lg" style="border:2px solid #bb217b ">
+                    <div class="row px-4 py-3 ">
                         <div class="col-md-6" data-aos="zoom-in">
 
                             <p class="h5">STRUCTURE</p>
