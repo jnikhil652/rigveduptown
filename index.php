@@ -515,52 +515,52 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-3 card shadow-lg" style="border:2px solid #bb217b" data-aos="zoom-in" id="Specifications">
-                    <div class="col-md-12 mt-2">
+                    <div class="col-md-12 mt-2 mb-n2">
                         <p class="h1 txtColor"><b>Specifications</b></p>
                     </div>
-                    <div class="row px-4 py-3 ">
+                    <div class="row px-4 pb-3">
                         <div class="col-md-6" data-aos="zoom-in">
 
-                            <p class="h5 mt-2">STRUCTURE</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">STRUCTURE</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>RCC Structure Designed With Earthquake Resistant
                                     Frame.</li>
                             </ul>
 
 
-                            <p class="h5 mt-2">MASONRY</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">MASONRY</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Fly Ash Bricks / AAC Blocks Masonry Work</li>
                             </ul>
 
-                            <p class="h5 mt-2">KITCHEN</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">KITCHEN</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Steel Grey Granite Kitchen Platform With SS Sink</li>
                                 <li>Dado Up To 2' Height Provision For Washing Machine In
                                     Dry Balcony</li>
                             </ul>
-                            <p class="h5 mt-2">UTILITIES</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">UTILITIES</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Sewage Treatment Plant </li>
                                 <li>Rainwater Harvesting</li>
                                 <li> Underground And Overhead Tanks For Water Storage,
                                     Firefighting System</li>
                                 <li>100% Power Backup For Common Areas & Lift</li>
                             </ul>
-                            <p class="h5 mt-2">SECURITY</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">SECURITY</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>CCTV Cameras For Security</li>
                                 <li>Security Cabin</li>
                                 <li>Boom Barriers</li>
                             </ul>
-                            <p class="h5 mt-2">WALL FINISH</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">WALL FINISH</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Gypsum / POP Finish For Internal Wall & Side Sand
                                     Faced Plaster For Exterior Wall</li>
                                 <li>OBD Paint</li>
                             </ul>
-                            <p class="h5 mt-2">BATHROOMS</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">BATHROOMS</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Concealed Plumbing Of Premium ISI Mark</li>
                                 <li>C.P. Fittings -Jaguar Or Equivalent</li>
                                 <li>Premium Sanitary Fittings - Floor / Wall Mounted -
@@ -571,21 +571,21 @@
                             </ul>
                         </div>
                         <div class="col-md-6 " data-aos="zoom-in">
-                            <p class="h5 mt-2">FLOORING</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">FLOORING</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>24" X 48” Vitrified Tiles Across The Apartment</li>
                                 <li>Anti-skid Ceramic Tiles For Bathroom & Dry Balcony</li>
                             </ul>
-                            <p class="h5 mt-2">BALCONY RAILING</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">BALCONY RAILING</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>MS Railing As Per The Requirement</li>
                             </ul>
-                            <p class="h5 mt-2">ELEVATORS</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">ELEVATORS</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>6 Passenger Lifts - Kone Or Equivalent</li>
                             </ul>
-                            <p class="h5 mt-2">ELECTRIFICATION</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">ELECTRIFICATION</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Concealed Internal Electrical Wiring - Finolex / Polycab / Havells
                                     Or Equivalent</li>
                                 <li>Modular Switches - Legrand Or Equivalent</li>
@@ -597,8 +597,8 @@
                                 <li>Provision For TV Points In Living & Master Bedroom</li>
                                 <li>Provision For AC Point In Both Bedrooms</li>
                             </ul>
-                            <p class="h5 mt-2">DOORS & WINDOWS</p>
-                            <ul class="list-group smalli">
+                            <p class="h5 mt-3">DOORS & WINDOWS</p>
+                            <ul class="list-group mt-n2 smalli">
                                 <li>Main Door - Modular Laminated Wooden Door Frames And Woode
                                     Shutter With Europa Or Equivalent Safety Locks
                                 </li>
