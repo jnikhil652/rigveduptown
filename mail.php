@@ -22,14 +22,17 @@ $mail->Password   = 'Swapmarvel@345';                               //SMTP passw
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure 
 $mail->setFrom('sales@rigveduptown-balewadi.com', 'Rigved Uptown');
-$mail->addAddress('jnikhil652@gmail.com', 'Swapnil');     //Add a recipient
+// $mail->addAddress('jnikhil652@gmail.com', 'Swapnil');     //Add a recipient
 $mail->addAddress('swapnil@propsource.in', 'Swapnil');     //Add a recipient
 $mail->isHTML(true);                                  //Set email format to HTML
-$mail->Subject = 'Rigved uptown Enquiry' . date("Y-m-d h:i:sa");
+$mail->Subject = 'Rigved uptown Enquiry';
 $mail->Body    = 'Name :' . $postData['name'] . "<br>" . "Email:" . $postData["email"] . "<br>" . "Phone:" . $postData["phone"];
 $mail->AltBody = 'Name :' . $postData['name'] . " //" . "Email:" . $postData["email"] . "//" . "Phone:" . $postData["phone"];
 $response = array();
 if ($mail->send()) {
+    $mail->addAddress('jnikhil652@gmail.com', 'Nikhil');     //Add a recipient
+    // $mail->addAddress('swapnil@propsource.in', 'Swapnil');     //Add a recipient
+    $mail->send();
     $response = array(
         "status" => true,
         "message" => "mail send"

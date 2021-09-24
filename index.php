@@ -887,6 +887,7 @@
                 data: data,
                 success: function(response) {
                     bootbox.alert({
+                        // message: response.message,
                         message: "Thank you! Your request has been successfully submitted. We will get back to you shortly.",
                         closeButton: false
                     });
