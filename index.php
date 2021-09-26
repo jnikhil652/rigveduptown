@@ -935,7 +935,7 @@
                 '<small id="phonePopupTxt" class="form-text text-danger"></small>' +
                 '</div>' +
                 '<div class="col-md-12 mt-4">' +
-                '<a href="javascript:void(0);" onclick="formSubmit(3);return gtag_report_conversion(\'https: //rigveduptown-balewadi.com/\');" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>' +
+                '<a href="javascript:void(0);" onclick="formSubmit(3);return gtag_report_conversion();" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>' +
                 '</div>' +
                 '</form>';
             bootbox.dialog({
