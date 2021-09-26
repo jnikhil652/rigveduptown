@@ -375,7 +375,7 @@
                             <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" target="_blank" class="callback px-2 py-1 text-white text-decoration-none" href="javascript:void(0);"> Request Call Back </a>
                         </div>
                         <div class="col-md-8 mt-3 text-center">
-                            <a class="visit px-2 py-1 text-white text-decoration-none" href="javascript:void(0);" onclick="popup();">Schedule Site Visit</a>
+                            <a class="visit px-2 py-1 text-white text-decoration-none" href="javascript:void(0);" onclick="popup();return gtag_report_conversion();">Schedule Site Visit</a>
                         </div>
                     </div>
                 </div>
@@ -395,7 +395,7 @@
                         <small id="phoneMobTxt" class="form-text text-danger "></small>
                     </div>
                     <div class="col-md-12 mt-3 text-center">
-                        <a href="javascript:void(0);" onclick="formSubmit(2);return gtag_report_conversion('https://rigveduptown-balewadi.com/');" class="btn px-3 py-1 themeColor animate__animated animate__bounce animate__slower animate__infinite">Avail Pre-book Offer</a>
+                        <a href="javascript:void(0);" onclick="formSubmit(2);return gtag_report_conversion();" class="btn px-3 py-1 themeColor animate__animated animate__bounce animate__slower animate__infinite">Avail Pre-book Offer</a>
                     </div>
                 </form>
             </div>
@@ -460,7 +460,7 @@
                             <h5>
                                 <p class="h6">This is where all the action is This is where you can feel the buzz of modern Puna Join in the hustle & bustle and make the most of what the city has to offer. Be in the midst of all the action. This lifestyle is right up your street!</p>
                             </h5>
-                            <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" onclick="return gtag_report_conversion('https://rigveduptown-balewadi.com/');" class="btn themeColor mt-3">Get in Touch</a>
+                            <a href="https://wa.me/+918669546954/?text=Hi i would like to have more information about Rigved Uptown Balewadi" onclick="return gtag_report_conversion();" class="btn themeColor mt-3">Get in Touch</a>
                         </div>
                     </div>
                 </div>
@@ -477,7 +477,7 @@
                                     <p>Price: 69L* Onwards</p>
                                     <p>Built-up Area: 714 Sq.ft</p>
 
-                                    <p><a href="javascript:void(0);" onclick="popup();return gtag_report_conversion('https://rigveduptown-balewadi.com/');" class="btn themeColor">Price Breakup</a> <a href="mailto:sales@rigveduptown-balewadi.com" onclick="return gtag_report_conversion('https://rigveduptown-balewadi.com/');"><i class=" fas fa-envelope"></i></a> <a href="tel:+918669546954" onclick="return gtag_report_conversion('https://rigveduptown-balewadi.com/');"><i class="fas fa-phone-alt"></i></a></p>
+                                    <p><a href="javascript:void(0);" onclick="popup();return gtag_report_conversion();" class="btn themeColor">Price Breakup</a> <a href="mailto:sales@rigveduptown-balewadi.com" onclick="return gtag_report_conversion();"><i class=" fas fa-envelope"></i></a> <a href="tel:+918669546954" onclick="return gtag_report_conversion();"><i class="fas fa-phone-alt"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -488,7 +488,7 @@
                                     <p><img class="img-fluid" src="img/costing-detail.webp" alt=""></p>
                                     <p><a class="text-decoration-none" href="tel:+918669546954">Call at +91 8669546954</a></p>
                                     <p>Or</p>
-                                    <p><a href="javascript:void(0);" class="btn themeColor" onclick="popup();return gtag_report_conversion('https://rigveduptown-balewadi.com/');">Enquire Now</a></p>
+                                    <p><a href="javascript:void(0);" class="btn themeColor" onclick="popup();return gtag_report_conversion();">Enquire Now</a></p>
                                 </div>
                             </div>
                         </div>
@@ -707,7 +707,7 @@
                         <p class="h1 txtColor"><b>Virual Tour</b></p>
                     </div>
                     <div class="col-md-12 d-flex justify-content-center my-3" data-aos="zoom-in">
-                        <video onclick="return gtag_report_conversion('https://rigveduptown-balewadi.com/');" class="tour" controls>
+                        <video onclick="return gtag_report_conversion();" class="tour" controls>
                             <source src="vid/tour.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -727,8 +727,8 @@
                             <div class="col-xs-6 col-md-5" data-aos="zoom-in">
                                 <h6>Categories</h6>
                                 <ul class="footer-links">
-                                    <li><a class="text-decoration-none" href="tel:+8669546954" onclick="return gtag_report_conversion('https://rigveduptown-balewadi.com/');"><i class="fas  fa-phone-alt h4"></i> +91 8669546954</a></li>
-                                    <li><a class="text-decoration-none" href="mailto:sales@rigveduptown-balewadi.com" onclick="return gtag_report_conversion('https://rigveduptown-balewadi.com/');"><i class="fas fa-envelope h4"></i> sales@rigveduptown-balewadi.com</a></li>
+                                    <li><a class="text-decoration-none" href="tel:+8669546954" onclick="return gtag_report_conversion();"><i class="fas  fa-phone-alt h4"></i> +91 8669546954</a></li>
+                                    <li><a class="text-decoration-none" href="mailto:sales@rigveduptown-balewadi.com" onclick="return gtag_report_conversion();"><i class="fas fa-envelope h4"></i> sales@rigveduptown-balewadi.com</a></li>
                                     <li><a class="text-decoration-none" href=""><i class="fas fa-map-marked-alt h4"></i> Balewadi, Pune</a></li>
                                 </ul>
                             </div>
@@ -791,7 +791,7 @@
                                 <small id="phoneSideTxt" class="form-text text-danger"></small>
                             </div>
                             <div class="col-md-12 mt-4">
-                                <a href="javascript:void(0);" onclick="formSubmit(1);return gtag_report_conversion('https://rigveduptown-balewadi.com/');" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
+                                <a href="javascript:void(0);" onclick="formSubmit(1);return gtag_report_conversion();" class="btn px-3 py-1 themeColor">Avail Pre-book Offer</a>
                             </div>
                         </form>
                     </div>
