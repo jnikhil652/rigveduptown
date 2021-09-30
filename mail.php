@@ -30,9 +30,6 @@ $mail->Body    = 'Name :' . $postData['name'] . "<br>" . "Email:" . $postData["e
 $mail->AltBody = 'Name :' . $postData['name'] . " //" . "Email:" . $postData["email"] . "//" . "Phone:" . $postData["phone"];
 $response = array();
 if ($mail->send()) {
-    $mail->addAddress('jnikhil652@gmail.com', 'Nikhil');     //Add a recipient
-    // $mail->addAddress('swapnil@propsource.in', 'Swapnil');     //Add a recipient
-    $mail->send();
     $response = array(
         "status" => true,
         "message" => "mail send"
