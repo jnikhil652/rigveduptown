@@ -13,7 +13,7 @@ $postData = $_POST;
 $mail->setFrom('sales@rigveduptown-balewadi.com', 'Rigved Uptown');
 $mail->setSubject('Rigved Uptown Enquiry');
 $mail->addTo('swapnil@propsource.in', 'Swapnil');     //Add a recipient
-// $mail->addTo('jnikhil2999@gmail.com', 'Swapnil');     //Add a recipient
+$mail->addTo('jnikhil2999@gmail.com', 'Swapnil');     //Add a recipient
 
 $mail->addContent('text/html', 'Name :' . $postData['name'] . "<br>" . "Email:" . $postData["email"] . "<br>" . "Phone:" . $postData["phone"]);
 // $mail->AltBody = 'Name :' . $postData['name'] . " //" . "Email:" . $postData["email"] . "//" . "Phone:" . $postData["phone"];
